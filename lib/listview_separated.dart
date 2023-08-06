@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: ListviewSeperated(),
   ));
 }
@@ -41,7 +42,11 @@ class ListviewSeperated extends StatelessWidget {
                 height: 30,
                 child: Card(
                   color: Colors.red,
-                  child: Center(child: Text('Advertisement')),
+                  child: Center(
+                      child: Text(
+                    'Advertisement',
+                    style: TextStyle(color: Colors.white),
+                  )),
                 ),
               );
             } else {
