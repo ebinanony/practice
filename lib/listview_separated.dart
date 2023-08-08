@@ -28,7 +28,7 @@ class ListviewSeperated extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Listview Separated'),
+        title: const Text('Listview Separated'),
       ),
       body: ListView.separated(
           itemBuilder: (context, index) {
@@ -40,7 +40,7 @@ class ListviewSeperated extends StatelessWidget {
             if (index % 4 == 0) {
               return Container(
                 height: 30,
-                child: Card(
+                child: const Card(
                   color: Colors.red,
                   child: Center(
                       child: Text(
@@ -50,7 +50,7 @@ class ListviewSeperated extends StatelessWidget {
                 ),
               );
             } else {
-              return SizedBox();
+              return const SizedBox();
             }
           },
           itemCount: 12),

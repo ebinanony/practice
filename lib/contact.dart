@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:cupertino_icons/cupertino_icons.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Contact(),
     debugShowCheckedModeBanner: false,
   ));
 }
 
 class Contact extends StatelessWidget {
+  const Contact({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Simple ContactList'),
+        title: const Text('Simple ContactList'),
       ),
       body: ListView(
         children: [
-          ListTile(
+          const ListTile(
             title: Text('John Juda'),
             subtitle: Text("656864316641616"),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -30,7 +30,7 @@ class Contact extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             title: Text('Antony K M'),
             subtitle: Text("9061784544"),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -42,7 +42,7 @@ class Contact extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             title: Text('Amma'),
             subtitle: Text("9061784555"),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -54,7 +54,7 @@ class Contact extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             title: Text('Lalettan'),
             subtitle: Text("8745120223"),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -66,7 +66,7 @@ class Contact extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             title: Text('CID'),
             subtitle: Text("6564785126"),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -79,36 +79,36 @@ class Contact extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Chalakudy'),
-            subtitle: Text("8136849300"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Chalakudy'),
+            subtitle: const Text("8136849300"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
               backgroundColor: Colors.grey.shade500,
-              child: Icon(
+              child: const Icon(
                 Icons.person,
                 color: Colors.white,
               ),
             ),
           ),
           ListTile(
-            title: Text('Sharuk'),
-            subtitle: Text("7845965855"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Sharuk'),
+            subtitle: const Text("7845965855"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
               backgroundColor: Colors.purple.shade900,
-              child: Icon(
+              child: const Icon(
                 Icons.person,
                 color: Colors.white,
               ),
             ),
           ),
           ListTile(
-            title: Text('Suhail'),
-            subtitle: Text("9784568955"),
-            trailing: Icon(Icons.arrow_forward_ios),
+            title: const Text('Suhail'),
+            subtitle: const Text("9784568955"),
+            trailing: const Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
               backgroundColor: Colors.blue.shade200,
-              child: Icon(
+              child: const Icon(
                 Icons.person,
                 color: Colors.white,
               ),

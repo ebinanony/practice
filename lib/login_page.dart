@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:practice/first_page.dart';
 import 'package:practice/signup_page.dart';
-import 'package:practice/splash_screen.dart';
 
 class LoginPage extends StatefulWidget {
   @override
